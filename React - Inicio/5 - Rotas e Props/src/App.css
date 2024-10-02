@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#root {
+	/* com grid irá precisar apenas disso */
+	/*
+	você está criando uma única linha no grid que ocupa todo o espaço disponível na área do grid, usando uma fração do espaço disponível
+	*/
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100vh;*/
+}
+header {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	background-color: #006f9b;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+main {
+	/* significa que o item pode crescer para ocupar todo o espaço disponível dentro do contêiner. */
+
+	/*flex: 1; Precisa se for com display:flex*/
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #006f9b;
+	color: #fff;
+}
